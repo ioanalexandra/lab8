@@ -10,7 +10,7 @@ public class Conexiune {
 
 	private Conexiune() {
 		try {
-			c = DriverManager.getConnection("jdbc:mysql://localhost/lab8?" + "user=root@localhost");
+			c = DriverManager.getConnection("jdbc:mysql://localhost/lab8?" + "user=root");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
