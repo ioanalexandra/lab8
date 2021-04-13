@@ -3,6 +3,7 @@ package lab8;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Conexiune {
 	private Connection c = null;
@@ -21,5 +22,9 @@ public class Conexiune {
 			conex = new Conexiune();
 		}
 		return conex;
+	}
+
+	public Statement createStatement() throws SQLException {
+		return c.createStatement();
 	}
 }
