@@ -1,2 +1,2 @@
 # lab8
-Am lucrat o parte cerintele compulsory.
+Am lucrat cerintele compulsory si o parte dintre cele optionale.
