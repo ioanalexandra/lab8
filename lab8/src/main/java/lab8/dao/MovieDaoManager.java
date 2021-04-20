@@ -20,7 +20,7 @@ public class MovieDaoManager implements MovieDao, GenreDao {
 			while (r.next()) {
 				String title = r.getString("title");
 				String releaseDate = r.getString("release_date");
-				String duration = r.getString("duration");
+				int duration = Integer.parseInt(r.getString("duration"));
 				String score = r.getString("score");
 				String movieId = r.getString("id");
 				movieList.add(new Movie(title, duration, releaseDate, null, Integer.parseInt(score),
@@ -60,7 +60,7 @@ public class MovieDaoManager implements MovieDao, GenreDao {
 			while (r.next()) {
 				String title = r.getString("title");
 				String releaseDate = r.getString("release_date");
-				String duration = r.getString("duration");
+				int duration = Integer.parseInt(r.getString("duration"));
 				String score = r.getString("score");
 				String movieId = r.getString("id");
 				movie = new Movie(title, duration, releaseDate, null, Integer.parseInt(score),
@@ -113,7 +113,7 @@ public class MovieDaoManager implements MovieDao, GenreDao {
 			while (r.next()) {
 				String title = r.getString("title");
 				String releaseDate = r.getString("release_date");
-				String duration = r.getString("duration");
+				int duration = Integer.parseInt(r.getString("duration"));
 				String score = r.getString("score");
 				String movieId = r.getString("id");
 				movie = new Movie(title, duration, releaseDate, null, Integer.parseInt(score),
